@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Variables in Python</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f9f9f9;
+      background: #f4f4f4;
       color: #333;
+      padding: 30px;
       line-height: 1.6;
     }
     h1, h2 {
       color: #2c3e50;
     }
     code {
-      background-color: #f4f4f4;
-      padding: 2px 6px;
+      background-color: #eaeaea;
+      padding: 3px 6px;
       border-radius: 4px;
       font-family: Consolas, monospace;
     }
     pre {
-      background-color: #efefef;
+      background: #efefef;
       padding: 10px;
-      border-radius: 4px;
+      border-radius: 5px;
       overflow-x: auto;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
     ul {
-      list-style: disc;
       margin-left: 20px;
     }
   </style>
@@ -37,13 +43,45 @@
 
   <h1>Variables in Python</h1>
 
-  <p>Variables are used to store data in a program. In Python, you don't need to declare the type of a variable before using it — the type is inferred based on the value you assign.</p>
+  <p>Variables are used to store information that can be referenced and manipulated in a program. Python variables are dynamically typed, which means you don’t need to declare their data type explicitly.</p>
 
-  <h2>How to Declare a Variable</h2>
-  <pre><code>name = "John"
-age = 25
-height = 5.9
-is_student = True</code></pre>
+  <img src="https://www.scaler.com/topics/images/variables-in-python.webp" alt="Variables in Python Illustration" />
+
+  <h2>Example of Variable Declaration</h2>
+  <pre><code>
+name = "Alice"        # String
+age = 30              # Integer
+height = 5.7          # Float
+is_student = True     # Boolean
+  </code></pre>
+
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*1ntGj0nI0IfCh3o3kDFiEg.png" alt="Python variable types example" />
 
   <h2>Rules for Naming Variables</h2>
   <ul>
+    <li>Variable names must begin with a letter or an underscore (_).</li>
+    <li>The name can contain letters, numbers, and underscores.</li>
+    <li>Variable names are case-sensitive (<code>age</code> and <code>Age</code> are different).</li>
+    <li>You cannot use Python reserved words (like <code>if</code>, <code>while</code>, <code>class</code>).</li>
+  </ul>
+
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210303151918/Python-Variables.png" alt="Valid and Invalid Python Variables" />
+
+  <h2>Multiple Assignment</h2>
+  <p>You can assign values to multiple variables in a single line:</p>
+  <pre><code>
+x, y, z = 10, 20, 30
+a = b = c = "Same"
+  </code></pre>
+
+  <h2>Check Variable Type</h2>
+  <pre><code>
+print(type(name))   # &lt;class 'str'&gt;
+print(type(age))    # &lt;class 'int'&gt;
+  </code></pre>
+
+  <h2>Conclusion</h2>
+  <p>Variables are a basic but essential concept in Python. Understanding how to declare and use them is key to writing effective programs.</p>
+
+</body>
+</html>
